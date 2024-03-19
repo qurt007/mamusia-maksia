@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<title>formularze</title>
+	</head>
+	<body>
+		<h1> Formularze w html</h1>
+		<form action="plik.php" method="POST">
+			imie:
+			<input type="tekst" name="imie" size="30"/><br/>
+			hasło:
+			<input type="password" name="hasło"/><br/>
+			data:
+			<input type="date" name="data" size="30"/><br/>
+			</form>
+			kolor:
+			<input type="color" name="kolor"/><br/>
+			miasto
+			<select name="miasto">
+			<option>Poznań</option>
+			<option>Wrocław</option>
+			<option>Katowice</option>
+			<option>Gdynia</option>
+			</select>
+			<br/>
+			<textarea cols=20 rows=6 name="opinia">...
+			</textarea>
+			<br/>
+			Regulamin:
+			<input type="checkbox" name="regulamin" /><br/>
+			k<input type="radio" name="plec" value="k"/>
+			m<input type="radio" name="plec" value="m"/>
+			<br/>
+			<input type="button" name="przycisk1" value="kliknij mnie"/><br/>
+			<input type="reset" value="wyczyść"/><br/>
+			<input type="submit" value="zatwierdź"/><br/>
+		</form>
+	</body>
+</html>

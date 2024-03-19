@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<title>formularze zadanie</title>
+	</head>
+	<body>
+		<h1>Rejestracja</h1>
+		<form action="plik.php" method="POST">
+		<table border = 1 cellpadding = "10px">
+		<tr>
+			<td>imie:</td>
+			<td><input type="tekst" name="imie" size="30"/></td>
+		</tr>
+		<tr>
+			<td>email:</td>
+			<td><input type="tekst" name="email" size="30"/></td>
+		</tr>
+		<tr>
+			<td>miejscowość:</td>
+			<td><select name="miasto">
+			<option>Poznań</option>
+			<option>Wrocław</option>
+			<option>Katowice</option>
+			<option>Gdynia</option>
+			<option>Warszawa</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td>pytanie:<br/>
+			<textarea cols=20 rows=6 name="pytanie"></textarea></td>
+			<td>zainteresowania:<br/>
+			sport: <input type="checkbox" name="sport" /><br/>
+			nauka: <input type="checkbox" name="nauka" /><br/>
+			programowanie: <input type="checkbox" name="programowanie" /><br/>
+			<input type="submit" value="zatwierdź"/>
+			</td>
+		</tr>
+		</table>
+	</body>
+</html>

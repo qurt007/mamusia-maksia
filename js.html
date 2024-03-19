@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<title>js</title>
+		<script>
+		function dodaj()
+		{
+			var a = document.getElementById("pole1").value;
+			var b = document.getElementById("pole2").value;
+			a = parseFloat(a);
+			b = parseInt(b);
+			var w = a+b;
+			document.getElementById("wynik").value = w;
+		}
+		</script>
+	</head>
+	<body>
+	<h1>JavaScript</h1>
+	<script>
+	var komunikat ="2E";
+	var pi=3.14;
+	let x=12;
+	document.write("cześć &nbsp&nbsp&nbsp" + komunikat + x);
+	</script>
+	<select name="rok">
+		<script>
+		for(let i=2024; i>=1990; i--)
+			{
+			document.write("<option>"+i+"</option>");
+			}
+		</script>
+	</select>
+	<select name="miesiąc">
+		<script>
+		for(let i=12; i>=1; i--)
+			{
+			document.write("<option>"+i+"</option>");
+			}
+		</script>
+	</select>
+	<select name="dni">
+		<script>
+		for(let i=31; i>=1; i--)
+			{
+			document.write("<option>"+i+"</option>");
+			}
+		</script>
+	</select>
+	<br/>
+	<input id="pole1" type="text" name="pole1"/>+
+	<input id="pole2" type="text" name="pole2"/>
+	<input type="button" value="=" onclick="dodaj()" />
+	<input id="wynik" type="text" name="wynik"/>
+	</body>
+</html>
